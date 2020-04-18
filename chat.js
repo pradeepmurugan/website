@@ -750,7 +750,7 @@ async function liveAgentScreen(dataName) {
 		//var socketName = (body.body.baseUrl).replace(/^https?\:\/\//i, "");
 		var socketName = "open.rocket.chat"
 		// console.log("socketName", 'wss://' + socketName + '/websocket');
-		let wbSockt = 'ws://' + socketName + '/websocket';
+		let wbSockt = 'wss://' + socketName + '/websocket';
 		chatRoomId = "oz6JdxXr8N4BA94Wt"
 		//chatRoomId = body.body.channelId;
 		userName = "pradeepmurugan"
