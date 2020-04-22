@@ -748,17 +748,17 @@ async function liveAgentScreen(dataName) {
 	else
 	{
 		//var socketName = (body.body.baseUrl).replace(/^https?\:\/\//i, "");
-		var socketName = "chat.blueleap.com"
+		var socketName = "dev.chat.blueleap.com/org2"
 		// console.log("socketName", 'wss://' + socketName + '/websocket');
 		let wbSockt = 'wss://' + socketName + '/websocket';
-		//chatRoomId = "GENERAL"
-		chatRoomId = body.body.channelId;
+		chatRoomId = "GENERAL"
+		//chatRoomId = body.body.channelId;
 		//chatRoomId = "vrw5RPmRQ6aXH7sM6"
-		userName = "clientchat"
+		userName = "admin"
 		//userName = "pradeep"
-		userName = atob(body.body.user);
-		var userPassword = atob(body.body.password);
-		//var userPassword = "12345"
+		//userName = atob(body.body.user);
+		//var userPassword = atob(body.body.password);
+		var userPassword = "12345"
 		//var userPassword = "Chennai!@10"
 		//var channelName = body.body.channelName;
 		var hashPassword = sha256(userPassword);
