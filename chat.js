@@ -748,15 +748,18 @@ async function liveAgentScreen(dataName) {
 	else
 	{
 		//var socketName = (body.body.baseUrl).replace(/^https?\:\/\//i, "");
-		var socketName = "chat.entiovi.com"
+		var socketName = "chat.blueleap.com"
 		// console.log("socketName", 'wss://' + socketName + '/websocket');
 		let wbSockt = 'wss://' + socketName + '/websocket';
-		chatRoomId = "vrw5RPmRQ6aXH7sM6"
-		//chatRoomId = body.body.channelId;
-		userName = "pradeep"
-		//userName = atob(body.body.user);
-		//var userPassword = atob(body.body.password);
-		var userPassword = "Chennai!@10"
+		//chatRoomId = "GENERAL"
+		chatRoomId = body.body.channelId;
+		//chatRoomId = "vrw5RPmRQ6aXH7sM6"
+		userName = "clientchat"
+		//userName = "pradeep"
+		userName = atob(body.body.user);
+		var userPassword = atob(body.body.password);
+		//var userPassword = "12345"
+		//var userPassword = "Chennai!@10"
 		//var channelName = body.body.channelName;
 		var hashPassword = sha256(userPassword);
 		// console.log("hashPassword", hashPassword)
